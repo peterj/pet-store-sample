@@ -37,7 +37,7 @@ const pets = [
     }
 ];
 
-app.get('/pet/findByStatus', (req, res) => {
+app.get('/v2/pet/findByStatus', (req, res) => {
     const status = req.query.status;
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(pets));
